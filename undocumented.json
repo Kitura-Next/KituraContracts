@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/KituraContracts/KituraContracts/Sources/KituraContracts/CodableQuery/Coder.swift",
+      "line": 30,
+      "symbol": "Coder.dateFormatter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/KituraContracts/KituraContracts"
+}
