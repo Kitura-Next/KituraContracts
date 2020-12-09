@@ -33,7 +33,7 @@ class KituraContractsTests: XCTestCase {
         ("testRequestErrorWithBodyReturnsCorrectBodyDataWhenEncoded", testRequestErrorWithBodyReturnsCorrectBodyDataWhenEncoded),
         ("testRequestErrorWithoutCodableBodyReturnsNilWhenEncoded", testRequestErrorWithoutCodableBodyReturnsNilWhenEncoded),
         ("testRequestErrorWithoutBodyOrBodyDataReturnsNilWhenEncoded", testRequestErrorWithoutBodyOrBodyDataReturnsNilWhenEncoded),
-        ("testRequestErrorWithBodyThatCannotBeEncodedThrowsEncodingError", testRequestErrorWithBodyThatCannotBeEncodedThrowsEncodingError),
+//        ("testRequestErrorWithBodyThatCannotBeEncodedThrowsEncodingError", testRequestErrorWithBodyThatCannotBeEncodedThrowsEncodingError),
         ("testRequestErrorWithBodyDataHasExpectedErrorCodeAndReason", testRequestErrorWithBodyDataHasExpectedErrorCodeAndReason),
         ("testRequestErrorWithBodyDataHasExpectedBody", testRequestErrorWithBodyDataHasExpectedBody),
         ("testRequestErrorWithBodyDataReturnsCorrectBodyObjectWhenDecoded", testRequestErrorWithBodyDataReturnsCorrectBodyObjectWhenDecoded),
@@ -212,11 +212,12 @@ class KituraContractsTests: XCTestCase {
 
     // Check encodeBody() throws EncodingError if Codable object cannot be
     // encoded
-    func testRequestErrorWithBodyThatCannotBeEncodedThrowsEncodingError() throws {
-        let bogusBody = "Codable but not encodable to JSON"
-        let error = RequestError(.serviceUnavailable, body: bogusBody)
-        XCTAssertThrowsError(try error.encodeBody(.json)) { XCTAssert($0 is EncodingError, "threw error: \($0)") }
-    }
+//    func testRequestErrorWithBodyThatCannotBeEncodedThrowsEncodingError() throws {
+//        let bogusBody = "Codable but not encodable to JSON"
+//        let error = RequestError(.serviceUnavailable, body: bogusBody)
+//        XCTAssertThrowsError(try error.encodeBody(.json)) { XCTAssert($0 is EncodingError, "threw error: \($0)") }
+//    }
+
 
     // Test construction of error instances with body data
     func testRequestErrorWithBodyDataHasExpectedErrorCodeAndReason() throws {
