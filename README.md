@@ -69,8 +69,7 @@ router.post("/users") { (user: User, respondWith: (User?, RequestError?) -> Void
 ````
 
 ## Swift version
-
-The 1.x.x releases were tested on macOS and Linux using the Swift 4.1 binaries. Please note that this is the default version of Swift that is included in [Xcode 9.3](https://developer.apple.com/xcode/).
+Requires **Swift 5.1** or newer. You can download this version of the Swift binaries by following this [link](https://swift.org/download/). Compatibility with other Swift versions is not guaranteed.
 
 ## API Documentation
 For more information visit our [API reference](https://kitura-next.github.io/KituraContracts/index.html).
